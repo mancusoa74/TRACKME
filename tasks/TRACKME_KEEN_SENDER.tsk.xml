@@ -1,0 +1,62 @@
+<TaskerData sr="" dvi="1" tv="4.6u3m">
+	<Task sr="task24">
+		<cdate>1421002201826</cdate>
+		<edate>1421527786983</edate>
+		<id>24</id>
+		<nme>TRACKME_KEEN_SENDER</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TRACKME_KEEN_CONFIG</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Invio Dati in Corso</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://api.keen.io</Str>
+			<Str sr="arg1" ve="3">3.0/projects/%TRACKME_KEEN_PROJECT_ID/events/%TRACKME_KEEN_COLLECTION?api_key=%TRACKME_KEEN_API_KEY</Str>
+			<Str sr="arg2" ve="3">%TRACKME_KEEN_EVENT</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<bool1>And</bool1>
+				<bool2>And</bool2>
+				<Condition sr="c0" ve="3">
+					<lhs>%TRACKME_KEEN_PROJECT_ID</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%TRACKME_KEEN_API_KEY</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c2" ve="3">
+					<lhs>%TRACKME_KEEN_COLLECTION</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c3" ve="3">
+					<lhs>%TRACKME_KEEN_EVENT</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>
